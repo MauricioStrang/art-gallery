@@ -3,7 +3,15 @@
   Angular pre 16 == Old angular
 Angular has a strong community: "The Angular Way" where the community decides what is the best solution for each type of problem, different from
   React that depends on the expierence and expertise of the developer to find the righ library to find a solution
-  This community decide on adding "Directives" like an ngIf, to add an extra functionality to an element that don't have-->
+  This community decide on adding "Directives" like an ngIf, to add an extra functionality to an element that don't have
+ChangeDectectionStrategy => OnPush, it only detects changes to that specific component instead of the whole DOM or branch like ZoneJs does
+  This is not sustainaible because you have to do this to all componentes, so ZoneJs goes, and instead they introduce Signals
+Signals use the concept of resumability, resumability instead of sending HTML + JS and then hidrate, it sends HTML and a Json, a script inside the html
+
+Reactive Programming (RxJs): 
+  Channels, Spectators and Events
+  Signals == Channels
+  -->
 <main class="main">
   <div class="content">
       <h1>Drawings</h1>
